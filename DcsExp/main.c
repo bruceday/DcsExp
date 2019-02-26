@@ -1,0 +1,57 @@
+#include "dcs.h"
+
+
+void Operator(inC_Operator *inC,outC_Operator *outC)
+{
+	binary tmp6;
+	binary tmp5;
+	binary tmp4;
+
+	DFL_POL_TIME_DEPENDENT_binary(&inC->H1RRF001MDB, &outC->Context_76);
+	kcg_copy_binary(&outC->H1RRF001MDBF,&outC->Context_76.O1);
+
+	FSF_POL_TIME_DEPENDENT_analog(&outC->H1RRF001MDBF,&inC->H1RRF001MDX,&outC->N1RRFS012N1X14);
+	THC_ANA_TIME_DEPENDENT(&outC->N1RRFS012N1X14,inC->S1RRF002XUSVAL,inC->S1RRF002XUHYST,&outC->Context_46);
+
+	kcg_copy_binary(&outC->N1RRF001MDX110,&outC->Context_46.O1);
+
+	FORCE_L_B_POL_TIME_DEPENDENT_binary(&outC->H1RRF001MDBF,&inC->RRFS012B01_1_force,inC->RRFS012B01_1_b_force,&outC->RRFS012B01_1_out);
+	DFL_POL_TIME_DEPENDENT_binary(&inC->H1YDA301MPB,&outC->Context_74);
+	kcg_copy_binary(&outC->H1YDA301MPBF,&outC->Context_74.O1);
+
+	FSF_POL_TIME_DEPENDENT_analog(&outC->H1YDA301MPBF, &inC->H1YDA301MPX, &outC->H1KRPF030N3X14);
+	FORCE_L_A_POL_TIME_DEPENDENT_analog(&outC->H1KRPF030N3X14,&inC->H1KRPF030A01_1_force,inC->KRPF030A01_1_b_force,&outC->KRPF030A01_1_out);
+
+	THC_ANA_TIME_DEPENDENT(&outC->KRPF031B02_1_out, inC->S1KRP155XUHYST, inC->S1KRP151XUHYST, &outC->Context_45);
+
+	kcg_copy_binary(&outC->N1KRP186IA,&outC->Context_45.O1);
+
+	TLC_ANA_TIME_DEPENDENT(&outC->KRPF030A01_1_out,inC->S1KRP151XUSVAL,inC->S1KRP151XUHYST,&outC->Context_44);
+	kcg_copy_binary(&outC->N1KRPF031N2X14, &outC->Context_44.O1);
+
+	TLC_ANA_TIME_DEPENDENT(&outC->KRPF030A01_1_out, inC->S1KRP151XUSVAL, inC->S1KRP151XUHYST, &outC->Context_43);
+	kcg_copy_binary(&outC->N1KRPF031N3X14, &outC->Context_43.O1);
+
+	TLC_ANA_TIME_DEPENDENT(&outC->KRPF030A01_1_out, inC->S1KRP151XUSVAL, inC->S1KRP151XUHYST, &outC->Context_42);
+	kcg_copy_binary(&outC->N1KRPF031N2X12_NO1, &outC->Context_42.O1);
+
+	FORCE_L_B_POL_TIME_DEPENDENT_binary(&inC->SYS_CARDERR_202_1,&inC->KCS501B01_1_force,inC->KCS501B01_1_b_force,&outC->KCS501B01_1_out);
+
+	FORCE_L_B_POL_TIME_DEPENDENT_binary(&inC->SYS_CARDERR_202_2,&inC->KCS501B02_1_force,inC->KCS501B01_1_b_force,&outC->KCS501B02_1_out);
+	DFL_POL_TIME_DEPENDENT_binary(&inC->H1KRP027CC1,&outC->Context_75);
+	kcg_copy_binary(&tmp6,&outC->Context_75.O1);
+	NOT_BIN_TIME_INDEPENDENT(&tmp6,&outC->N1KRP091KS);
+	NOT_BIN_TIME_INDEPENDENT(&tmp6,&outC->N1KRP091KS);
+	BSO_BIN_TIME_INDEPENDENT(&outC->KCS501B01_1_out,&inC->N1KRPF031N8X21_N01,&outC->KCS501B02_1_out,&inC->N1KRPF031N8X21_N02,&tmp6);
+	BSO_BIN_TIME_INDEPENDENT(&outC->KCS501B01_1_out, &inC->N1KRPF010DN21X31_NO1, &outC->KCS501B02_1_out, &inC->N1KRPF010CN13X31_N02, &tmp5);
+
+	Vote_2_3_RA_BIN_TIME_INDEPENDENT(&outC->N1KRPF031N4X21_N01,&tmp6, &tmp5, &tmp4);
+
+	AND2_BIN_TIME_INDEPENDENT_AND(&tmp4,&outC->N1KRP091KS,&outC->N1KRPF031N13X14);
+
+	FORCE_L_B_POL_TIME_DEPENDENT_binary(&outC->N1KRPF031N13X14,&inC->KRPF031B01_1_force,inC->KRPF031B01_1_b_force,&outC->KRPF031B01_1_out);
+
+	THC_ANA_TIME_DEPENDENT(&outC->H1KRPF030N3X14,inC->S1KRP154XUHSVAL,inC->S1KRP154XUHSVAL,&outC->Context_32);
+	kcg_copy_binary(&outC->N1KRPF030N2X12_N01,&outC->Context_32.O1);
+	DFL_POL_TIME_DEPENDENT_binary(&inC->H1KRP026CC1,&outC->Context_73);
+}

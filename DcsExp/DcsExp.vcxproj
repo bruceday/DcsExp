@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dcs.c" />
+    <ClCompile Include="dcs_se.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="main_SE.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dcs.h" />
+    <ClInclude Include="dcs_se.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E60A6AA5-5D15-452C-97BF-EB1AF5008396}</ProjectGuid>
@@ -114,8 +124,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
