@@ -19,10 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ABS_ANA_TIME_INDEPENDENT_SEE.c" />
+    <ClCompile Include="AND2_BIN_TIME_INDEPENDENT_AND_SE.c" />
+    <ClCompile Include="BSO_BIN_TIME_INDEPENDENT_SE.c" />
     <ClCompile Include="dcs.c" />
     <ClCompile Include="dcs_se.c" />
+    <ClCompile Include="DFL_POL_TIME_DEPENDENT_binary_SEE.c" />
+    <ClCompile Include="FORCE_L_A_POL_TIME_DEPENDENT_analog_SE.c" />
+    <ClCompile Include="FORCE_L_B_POL_TIME_DEPENDENT_binary_SE.c" />
+    <ClCompile Include="FSF_POL_TIME_DEPENDENT_analog_SEE.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="main_SE.c" />
+    <ClCompile Include="NOT_BIN_TIME_INDEPENDENT_SE.c" />
+    <ClCompile Include="se10.c" />
+    <ClCompile Include="se15.c" />
+    <ClCompile Include="se20.c" />
+    <ClCompile Include="se3.c" />
+    <ClCompile Include="se6.c" />
+    <ClCompile Include="THC_ANA_TIME_DEPENDENT_SEE.c" />
+    <ClCompile Include="TLC_ANA_TIME_DEPENDENT_SE.c" />
+    <ClCompile Include="Vote_2_3_RA_BIN_TIME_INDEPENDENT_SE.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dcs.h" />
