@@ -90,6 +90,21 @@
     <ClCompile Include="se30.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="se015.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se010.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se006.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se003.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se020.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dcs.h">

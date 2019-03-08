@@ -31,6 +31,11 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="main_SE.c" />
     <ClCompile Include="NOT_BIN_TIME_INDEPENDENT_SE.c" />
+    <ClCompile Include="se003.c" />
+    <ClCompile Include="se006.c" />
+    <ClCompile Include="se010.c" />
+    <ClCompile Include="se015.c" />
+    <ClCompile Include="se020.c" />
     <ClCompile Include="se10.c" />
     <ClCompile Include="se100.c" />
     <ClCompile Include="se15.c" />
