@@ -533,10 +533,6 @@ void TLC_ANA_TIME_DEPENDENT_SEE(
 void Operator_SEE(
 	kcg_bool tmp6_status,
 	kcg_bool tmp6_value,
-	kcg_bool tmp5_status,
-	kcg_bool tmp5_value,
-	kcg_bool tmp4_status,
-	kcg_bool tmp4_value,
 	kcg_bool inC_H1RRF001MDB_status,
 	kcg_bool inC_H1RRF001MDB_value,
 	kcg_bool outC_Context_76_O1_status,
@@ -639,26 +635,11 @@ void Operator_SEE(
 	kcg_bool outC_Context_75_init,
 	kcg_bool outC_Context_75__L24,
 	kcg_bool outC_N1KRP091KS_status,
-	kcg_bool outC_N1KRP091KS_value,
-	kcg_bool inC_N1KRPF031N8X21_N01_status,
-	kcg_bool inC_N1KRPF031N8X21_N01_value,
-	kcg_bool inC_N1KRPF031N8X21_N02_status,
-	kcg_bool inC_N1KRPF031N8X21_N02_value,
-	kcg_bool inC_N1KRPF0DN21X31_NO1_status,
-	kcg_bool inC_N1KRPF0DN21X31_NO1_value,
-	kcg_bool inC_N1KRPF0CN13X31_N02_status,
-	kcg_bool inC_N1KRPF0CN13X31_N02_value,
-	kcg_bool outC_N1KRPF031N4X21_N01_status,
-	kcg_bool outC_N1KRPF031N4X21_N01_value,
-	kcg_bool outC_N1KRPF031N13X14_status,
-	kcg_bool outC_N1KRPF031N13X14_value)
+	kcg_bool outC_N1KRP091KS_value)
 {
 
 	DFL_POL_TIME_DEPENDENT_binary_SEE(inC_H1RRF001MDB_status, inC_H1RRF001MDB_value, outC_Context_76_O1_status,
 		outC_Context_76_O1_value, outC_Context_76_O2_status, outC_Context_76_O2_value, outC_Context_76_init, outC_Context_76__L24);
-
-	outC_H1RRF001MDBF_status = outC_Context_76_O1_status;
-	outC_H1RRF001MDBF_value = outC_Context_76_O1_value;
 
 	FSF_POL_TIME_DEPENDENT_analog_SEE(outC_H1RRF001MDBF_status, outC_H1RRF001MDBF_value,
 		inC_H1RRF001MDX_status, inC_H1RRF001MDX_value,
@@ -673,8 +654,6 @@ void Operator_SEE(
 		outC_Context_46_SM1_state_nxt,
 		outC_Context_46_OutputValue);
 
-	outC_N1RRF001MDX110_status = outC_Context_46_O1_status;
-	outC_N1RRF001MDX110_value = outC_Context_46_O1_value;
 
 	FORCE_L_B_POL_TIME_DEPENDENT_binary_SEE(outC_H1RRF001MDBF_status,
 		outC_H1RRF001MDBF_value,
@@ -691,8 +670,6 @@ void Operator_SEE(
 		outC_Context_74_init,
 		outC_Context_74__L24);
 
-	outC_H1YDA301MPBF_status = outC_Context_74_O1_status;
-	outC_H1YDA301MPBF_value = outC_Context_74_O1_value;
 
 	FSF_POL_TIME_DEPENDENT_analog_SEE(outC_H1YDA301MPBF_status, outC_H1YDA301MPBF_value,
 		inC_H1YDA301MPX_status,
@@ -719,9 +696,6 @@ void Operator_SEE(
 		outC_Context_45_OutputValue);
 
 
-	outC_N1KRP186IA_status = outC_Context_45_O1_status;
-	outC_N1KRP186IA_value = outC_Context_45_O1_value;
-
 	TLC_ANA_TIME_DEPENDENT_SEE(outC_KRPF0A01_1_out_status,
 		outC_KRPF0A01_1_out_value,
 		inC_S1KRP151XUSVAL,
@@ -732,8 +706,6 @@ void Operator_SEE(
 		outC_Context_44_SM1_state_nxt,
 		outC_Context_44_OutputValue);
 
-	outC_N1KRPF031N2X14_status = outC_Context_44_O1_status;
-	outC_N1KRPF031N2X14_value = outC_Context_44_O1_value;
 
 	TLC_ANA_TIME_DEPENDENT_SEE(
 		outC_KRPF0A01_1_out_status,
@@ -746,8 +718,6 @@ void Operator_SEE(
 		outC_Context_43_O1_SM1_state_nxt,
 		outC_Context_43_O1_OutputValue);
 
-	outC_N1KRPF031N3X14_status = outC_Context_43_O1_status;
-	outC_N1KRPF031N3X14_value = outC_Context_43_O1_value;
 
 	TLC_ANA_TIME_DEPENDENT_SEE(outC_KRPF0A01_1_out_status,
 		outC_KRPF0A01_1_out_value,
@@ -758,10 +728,6 @@ void Operator_SEE(
 		outC_Context_42_O1_init,
 		outC_Context_42_O1_SM1_state_nxt,
 		outC_Context_42_O1_OutputValue);
-
-	outC_N1KRPF031N2X12_NO1_status = outC_Context_42_O1_status;
-	outC_N1KRPF031N2X12_NO1_value = outC_Context_42_O1_value;
-
 
 	FORCE_L_B_POL_TIME_DEPENDENT_binary_SEE(inC_SYS_CARDERR_202_1_status,
 		inC_SYS_CARDERR_202_1_value,
@@ -788,55 +754,13 @@ void Operator_SEE(
 		outC_Context_75_init,
 		outC_Context_75__L24);
 
-	tmp6_status = outC_Context_75_O1_status;
-	tmp6_value = outC_Context_75_O1_value;
-
 	NOT_BIN_TIME_INDEPENDENT_SEE(tmp6_status, tmp6_value, outC_N1KRP091KS_status, outC_N1KRP091KS_value);
-
-	NOT_BIN_TIME_INDEPENDENT_SEE(tmp6_status, tmp6_value, outC_N1KRP091KS_status, outC_N1KRP091KS_value);
-
-	BSO_BIN_TIME_INDEPENDENT_SEE(
-		outC_KCS501B01_1_out_status,
-		outC_KCS501B01_1_out_value,
-		inC_N1KRPF031N8X21_N01_status,
-		inC_N1KRPF031N8X21_N01_value,
-		outC_KCS501B02_1_out_status,
-		outC_KCS501B02_1_out_value,
-		inC_N1KRPF031N8X21_N02_status,
-		inC_N1KRPF031N8X21_N02_value,
-		tmp6_status,
-		tmp6_value);
-
-	BSO_BIN_TIME_INDEPENDENT_SEE(
-		outC_KCS501B01_1_out_status,
-		outC_KCS501B01_1_out_value,
-		inC_N1KRPF0DN21X31_NO1_status,
-		inC_N1KRPF0DN21X31_NO1_value,
-		outC_KCS501B02_1_out_status,
-		outC_KCS501B02_1_out_value,
-		inC_N1KRPF0CN13X31_N02_status,
-		inC_N1KRPF0CN13X31_N02_value,
-		tmp5_status,
-		tmp5_value);
-
-	Vote_2_3_RA_BIN_TIME_INDEPENDENT_SEE(outC_N1KRPF031N4X21_N01_status, outC_N1KRPF031N4X21_N01_value, tmp6_status, tmp6_value, tmp5_status, tmp5_value, tmp4_status, tmp4_value);
-
-	AND2_BIN_TIME_INDEPENDENT_AND_SEE(tmp4_status,
-		tmp4_value,
-		outC_N1KRP091KS_status,
-		outC_N1KRP091KS_value,
-		outC_N1KRPF031N13X14_status,
-		outC_N1KRPF031N13X14_value);
 }
 
 int main()
 {
 	kcg_bool tmp6_status;
 	kcg_bool tmp6_value;
-	kcg_bool tmp5_status;
-	kcg_bool tmp5_value;
-	kcg_bool tmp4_status;
-	kcg_bool tmp4_value;
 	kcg_bool inC_H1RRF001MDB_status;
 	kcg_bool inC_H1RRF001MDB_value;
 	kcg_bool outC_Context_76_O1_status;
@@ -940,25 +864,9 @@ int main()
 	kcg_bool outC_Context_75__L24;
 	kcg_bool outC_N1KRP091KS_status;
 	kcg_bool outC_N1KRP091KS_value;
-	kcg_bool inC_N1KRPF031N8X21_N01_status;
-	kcg_bool inC_N1KRPF031N8X21_N01_value;
-	kcg_bool inC_N1KRPF031N8X21_N02_status;
-	kcg_bool inC_N1KRPF031N8X21_N02_value;
-	kcg_bool inC_N1KRPF0DN21X31_NO1_status;
-	kcg_bool inC_N1KRPF0DN21X31_NO1_value;
-	kcg_bool inC_N1KRPF0CN13X31_N02_status;
-	kcg_bool inC_N1KRPF0CN13X31_N02_value;
-	kcg_bool outC_N1KRPF031N4X21_N01_status;
-	kcg_bool outC_N1KRPF031N4X21_N01_value;
-	kcg_bool outC_N1KRPF031N13X14_status;
-	kcg_bool outC_N1KRPF031N13X14_value;
 
 	klee_make_symbolic(&tmp6_status, sizeof(tmp6_status), "tmp6_status");
 	klee_make_symbolic(&tmp6_value, sizeof(tmp6_value), "tmp6_value");
-	klee_make_symbolic(&tmp5_status, sizeof(tmp5_status), "tmp5_status");
-	klee_make_symbolic(&tmp5_value, sizeof(tmp5_value), "tmp5_value");
-	klee_make_symbolic(&tmp4_status, sizeof(tmp4_status), "tmp4_status");
-	klee_make_symbolic(&tmp4_value, sizeof(tmp4_value), "tmp4_value");
 	klee_make_symbolic(&inC_H1RRF001MDB_status, sizeof(inC_H1RRF001MDB_status), "inC_H1RRF001MDB_status");
 	klee_make_symbolic(&inC_H1RRF001MDB_value, sizeof(inC_H1RRF001MDB_value), "inC_H1RRF001MDB_value");
 	klee_make_symbolic(&outC_Context_76_O1_status, sizeof(outC_Context_76_O1_status), "outC_Context_76_O1_status");
@@ -1062,27 +970,11 @@ int main()
 	klee_make_symbolic(&outC_Context_75__L24, sizeof(outC_Context_75__L24), "outC_Context_75__L24");
 	klee_make_symbolic(&outC_N1KRP091KS_status, sizeof(outC_N1KRP091KS_status), "outC_N1KRP091KS_status");
 	klee_make_symbolic(&outC_N1KRP091KS_value, sizeof(outC_N1KRP091KS_value), "outC_N1KRP091KS_value");
-	klee_make_symbolic(&inC_N1KRPF031N8X21_N01_status, sizeof(inC_N1KRPF031N8X21_N01_status), "inC_N1KRPF031N8X21_N01_status");
-	klee_make_symbolic(&inC_N1KRPF031N8X21_N01_value, sizeof(inC_N1KRPF031N8X21_N01_value), "inC_N1KRPF031N8X21_N01_value");
-	klee_make_symbolic(&inC_N1KRPF031N8X21_N02_status, sizeof(inC_N1KRPF031N8X21_N02_status), "inC_N1KRPF031N8X21_N02_status ");
-	klee_make_symbolic(&inC_N1KRPF031N8X21_N02_value, sizeof(inC_N1KRPF031N8X21_N02_value), "inC_N1KRPF031N8X21_N02_value");
-	klee_make_symbolic(&inC_N1KRPF0DN21X31_NO1_status, sizeof(inC_N1KRPF0DN21X31_NO1_status), "inC_N1KRPF0DN21X31_NO1_status");
-	klee_make_symbolic(&inC_N1KRPF0DN21X31_NO1_value, sizeof(inC_N1KRPF0DN21X31_NO1_value), "inC_N1KRPF0DN21X31_NO1_value");
-	klee_make_symbolic(&inC_N1KRPF0CN13X31_N02_status, sizeof(inC_N1KRPF0CN13X31_N02_status), "inC_N1KRPF0CN13X31_N02_status");
-	klee_make_symbolic(&inC_N1KRPF0CN13X31_N02_value, sizeof(inC_N1KRPF0CN13X31_N02_value), "inC_N1KRPF0CN13X31_N02_value");
-	klee_make_symbolic(&outC_N1KRPF031N4X21_N01_status, sizeof(outC_N1KRPF031N4X21_N01_status), "outC_N1KRPF031N4X21_N01_status");
-	klee_make_symbolic(&outC_N1KRPF031N4X21_N01_value, sizeof(outC_N1KRPF031N4X21_N01_value), "outC_N1KRPF031N4X21_N01_value");
-	klee_make_symbolic(&outC_N1KRPF031N13X14_status, sizeof(outC_N1KRPF031N13X14_status), "outC_N1KRPF031N13X14_status");
-	klee_make_symbolic(&outC_N1KRPF031N13X14_value, sizeof(outC_N1KRPF031N13X14_value), "outC_N1KRPF031N13X14_value");
 
 
 	Operator_SEE(
 		tmp6_status,
 		tmp6_value,
-		tmp5_status,
-		tmp5_value,
-		tmp4_status,
-		tmp4_value,
 		inC_H1RRF001MDB_status,
 		inC_H1RRF001MDB_value,
 		outC_Context_76_O1_status,
@@ -1185,18 +1077,6 @@ int main()
 		outC_Context_75_init,
 		outC_Context_75__L24,
 		outC_N1KRP091KS_status,
-		outC_N1KRP091KS_value,
-		inC_N1KRPF031N8X21_N01_status,
-		inC_N1KRPF031N8X21_N01_value,
-		inC_N1KRPF031N8X21_N02_status,
-		inC_N1KRPF031N8X21_N02_value,
-		inC_N1KRPF0DN21X31_NO1_status,
-		inC_N1KRPF0DN21X31_NO1_value,
-		inC_N1KRPF0CN13X31_N02_status,
-		inC_N1KRPF0CN13X31_N02_value,
-		outC_N1KRPF031N4X21_N01_status,
-		outC_N1KRPF031N4X21_N01_value,
-		outC_N1KRPF031N13X14_status,
-		outC_N1KRPF031N13X14_value);
+		outC_N1KRP091KS_value);
 	return 0;
 }

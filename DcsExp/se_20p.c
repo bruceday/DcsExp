@@ -77,6 +77,7 @@ void DFL_POL_TIME_DEPENDENT_binary_SEE(kcg_bool I1_status, kcg_bool I1_value, kc
 {
 	outC_O1_status = NO_FAULT;
 	outC_O2_status = NO_FAULT;
+	I1_status = kcg_true;
 	if (I1_status)
 	{
 		if (outC_init)
@@ -103,7 +104,7 @@ void DFL_POL_TIME_DEPENDENT_binary_SEE(kcg_bool I1_status, kcg_bool I1_value, kc
 
 void FSF_POL_TIME_DEPENDENT_analog_SEE(kcg_bool I1_status, kcg_bool I1_value, kcg_bool I2_status, kcg_real I2_value, kcg_bool O1_status, kcg_real O1_value)
 {
-	O1_value = I2_value;
+	O1_value = FAULT;
 	if (!I2_status | !I1_value | I1_status)
 	{
 		O1_status = FAULT;
@@ -126,6 +127,8 @@ void THC_ANA_TIME_DEPENDENT_SEE(
 	kcg_bool outC_OutputValue
 )
 {
+	SVAL = 12.3;
+	HYST = 22.6;
 	_4_SSM_ST_SM1 SM1_state_SEEl;
 	_4_SSM_ST_SM1 SM1_state_act;
 	if (outC_init)
@@ -290,6 +293,9 @@ void Vote_2_3_RA_BIN_TIME_INDEPENDENT_SEE(
 	_L201 = !I3_status;
 	_L220 = !I1_status;
 	_L203 = !I2_status;
+	_L201 = kcg_true;
+	_L220 = kcg_true;
+	_L203 = kcg_true;
 	if (_L201&_L220&_L203)
 	{
 		Local_number_NF = THIRD_INPUT;
@@ -454,6 +460,7 @@ void TLC_ANA_TIME_DEPENDENT_SEE(
 {
 	SSM_ST_SM1 SM1_state_SEEl;
 	SSM_ST_SM1 SM1_state_act;
+	outC_init = kcg_true;
 	if (outC_init)
 	{
 		SM1_state_SEEl = SSM_st_Init_SM1;

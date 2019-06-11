@@ -46,6 +46,11 @@
     <ClCompile Include="se30.c" />
     <ClCompile Include="se6.c" />
     <ClCompile Include="se60.c" />
+    <ClCompile Include="sere015.c" />
+    <ClCompile Include="se_20p.c" />
+    <ClCompile Include="se_3p.c" />
+    <ClCompile Include="se_6p.c" />
+    <ClCompile Include="se_8p.c" />
     <ClCompile Include="THC_ANA_TIME_DEPENDENT_SEE.c" />
     <ClCompile Include="TLC_ANA_TIME_DEPENDENT_SE.c" />
     <ClCompile Include="Vote_2_3_RA_BIN_TIME_INDEPENDENT_SE.c" />
