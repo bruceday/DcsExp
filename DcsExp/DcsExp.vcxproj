@@ -42,6 +42,7 @@
     <ClCompile Include="se150.c" />
     <ClCompile Include="se20.c" />
     <ClCompile Include="se200.c" />
+    <ClCompile Include="se20pp.cpp" />
     <ClCompile Include="se3.c" />
     <ClCompile Include="se30.c" />
     <ClCompile Include="se6.c" />

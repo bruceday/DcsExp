@@ -120,6 +120,9 @@
     <ClCompile Include="se_8p.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="se20pp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dcs.h">
