@@ -123,6 +123,21 @@
     <ClCompile Include="se20pp.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="se8pp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se3pp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se3p.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se6p.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="se8p.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dcs.h">

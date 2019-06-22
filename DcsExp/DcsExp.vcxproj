@@ -45,8 +45,13 @@
     <ClCompile Include="se20pp.c" />
     <ClCompile Include="se3.c" />
     <ClCompile Include="se30.c" />
+    <ClCompile Include="se3p.c" />
+    <ClCompile Include="se3pp.c" />
     <ClCompile Include="se6.c" />
     <ClCompile Include="se60.c" />
+    <ClCompile Include="se6p.c" />
+    <ClCompile Include="se8p.c" />
+    <ClCompile Include="se8pp.c" />
     <ClCompile Include="sere015.c" />
     <ClCompile Include="se_20p.c" />
     <ClCompile Include="se_3p.c" />
