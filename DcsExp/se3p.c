@@ -398,7 +398,7 @@ void FORCE_L_B_POL_TIME_INDEPENDENT_binary(
 	kcg_bool O1_value
 )
 {
-	kcg_int	SIGN = 1;
+	SIGN = 1;
 	switch (SIGN)
 	{
 	case 1:
